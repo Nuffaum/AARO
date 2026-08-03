@@ -1,0 +1,3 @@
+
+controle_player();
+

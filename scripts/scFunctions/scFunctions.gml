@@ -1,0 +1,2 @@
+
+//funções gerais do jogao

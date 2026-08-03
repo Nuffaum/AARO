@@ -1,0 +1,4 @@
+/// @description Transição no GUI
+
+
+
