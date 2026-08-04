@@ -1,6 +1,5 @@
 ///@description outline
 
-#region outline
 var offset = 1;
 var cor_outline = c_white;
 
@@ -16,6 +15,6 @@ if place_meeting(x, y, oPlayer)
 
 
 draw_self();
-#endregion
+
 
 

@@ -1,9 +1,8 @@
-///@description dando pro player o texto do diálogo
-
-
-//reset nos dialogos do player
-if keyboard_check_pressed(ord("E"))
+if (keyboard_check_pressed(ord("E")))
 {
-	alarm[0] = 1;
+	if (!instance_exists(oCaixaDialogo))
+	{
+		var diag = instance_create_layer(256, 56, "Dialogos", oCaixaDialogo);
+		diag.dialogos = dialogos;
+	}
 }
-
