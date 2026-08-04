@@ -12,21 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"1b8636b6-4ad2-4614-820f-9ae6089f2841","name":"1b8636b6-4ad2-4614-820f-9ae6089f2841","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2a101d4b-ed4e-49a5-a7be-90038b6311bb","name":"2a101d4b-ed4e-49a5-a7be-90038b6311bb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"2d999cfa-0eb6-4424-afd5-1ee20ccdeda9","blendMode":0,"displayName":"default","isLocked":false,"name":"2d999cfa-0eb6-4424-afd5-1ee20ccdeda9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"4899172e-e9fe-403d-aff7-a765b1e18a6c","blendMode":0,"displayName":"default","isLocked":false,"name":"4899172e-e9fe-403d-aff7-a765b1e18a6c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sFaceCardCadeira",
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"coisas do mapa",
-    "path":"folders/sprites/placehold/coisas do mapa.yy",
+    "name":"face cards",
+    "path":"folders/sprites/dialogos/face cards.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1b8636b6-4ad2-4614-820f-9ae6089f2841","path":"sprites/sFaceCardCadeira/sFaceCardCadeira.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"80e3e8c5-2723-469b-b9d1-2a9da521994e","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2a101d4b-ed4e-49a5-a7be-90038b6311bb","path":"sprites/sFaceCardCadeira/sFaceCardCadeira.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a580c59b-d45a-45c8-b137-46d6c80b5ef6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

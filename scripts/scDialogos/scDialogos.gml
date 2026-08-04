@@ -11,12 +11,13 @@ c = imagem de quem tá falando
 */
 
 global.personagens = [
-	{n: "Cadeira", c: sFaceCardCadeira, cor: c_aqua}
+	{n: "Naira", c: sFaceCardNaira, cor: $9a92df},
+	{n: "Cadeira", c: sFaceCardCadeira, cor: c_blue}
 ]
 
 global.dialogo1 = [
-	{texto: "uma cadeira insana", n: "Naira", c: sFaceCardNaira, v: 2},
-	{texto: "ela é bem legal", v: 2, p: 0},
-	{texto: "q", n: "Naira", c: sFaceCardNaira, v: 10, pa: 1},
-	{texto: "nada", v: 2, p: 0}
+	{texto: "uma cadeira insana", p: 0, v: 2},
+	{texto: "ela é bem legal", v: 2, p: 1},
+	{texto: "q", p: 0, v: 10, pa: 1},
+	{texto: "nada", v: 2, p: 1}
 ]

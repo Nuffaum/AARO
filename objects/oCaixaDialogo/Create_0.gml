@@ -1,5 +1,5 @@
-image_xscale = 21.75;
-image_yscale = 5.5;
+image_xscale = 18.5;
+image_yscale = 4.5;
 
 mapstring	= "!#$%&'()*+.-./0123456789:;<=>?@ABCDEÉFGHIÍJKLMNOÓPQRSTUÚVWXYZ[]^_`aábcdeéfghiíjklmnoópqrstuúvwxyz{|}"
 fonte		= font_add_sprite_ext(sFont, mapstring, true, 0);

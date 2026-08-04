@@ -1,7 +1,7 @@
-///@description personalização dos vagões
+/////@description personalização dos vagões
 
-room_set_width(rmVagoes, rm_largura);
+//room_set_width(rmVagoes, rm_largura);
 
-room_set_height(rmVagoes, rm_altura);
+//room_set_height(rmVagoes, rm_altura);
 
-sla = 0;
+//sla = 0;

@@ -124,8 +124,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"fonte",
-    "path":"folders/sprites/fonte.yy",
+    "name":"dialogos",
+    "path":"folders/sprites/dialogos.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

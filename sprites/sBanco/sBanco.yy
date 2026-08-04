@@ -23,7 +23,7 @@
   ],
   "name":"sBanco",
   "nineSlice":null,
-  "origin":0,
+  "origin":7,
   "parent":{
     "name":"coisas do mapa",
     "path":"folders/sprites/placehold/coisas do mapa.yy",
@@ -75,8 +75,8 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
-    "yorigin":0,
+    "xorigin":8,
+    "yorigin":16,
   },
   "swatchColours":[
     4278190335,4283801807,4286170592,4288410351,4282278835,4283140297,4283608803,4283117675,4282862003,4283069135,

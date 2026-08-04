@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"coisas do mapa",
-    "path":"folders/sprites/placehold/coisas do mapa.yy",
+    "name":"face cards",
+    "path":"folders/sprites/dialogos/face cards.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

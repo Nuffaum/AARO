@@ -1,3 +1,4 @@
-
-controle_player();
-
+if (pd_mover)
+{
+	controle_player();
+}

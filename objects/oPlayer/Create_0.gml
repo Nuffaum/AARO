@@ -3,7 +3,7 @@
 #region variáveis
 
 //velocidades
-spd		= 1.5;
+spd		= 1;
 hspd	= 0;
 vspd	= 0;
 grav	= .2;
@@ -11,6 +11,8 @@ grav	= .2;
 //pulo
 pulo_spd	= -3;
 
+e_frame = 0;
+pd_mover = 1;
 #endregion
 
 #region funções
@@ -63,10 +65,7 @@ controle_player = function()
 	}
 	else if pulo
 	{
-		if array_length(lista_dialogos) <= 0
-		{
-			vspd = pulo_spd;
-		}
+		vspd = pulo_spd;
 	}
 	
 	#endregion
@@ -76,6 +75,11 @@ controle_player = function()
 	if (hspd != 0)
 	{
 		image_xscale = sign(hspd);
+		sprite_index = sPlayerWalk;
+	}
+	else
+	{
+		sprite_index = sPlayerIdle;
 	}
 	
 	#endregion

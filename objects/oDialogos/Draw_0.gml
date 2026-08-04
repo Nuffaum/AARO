@@ -14,8 +14,6 @@ if place_meeting(x, y, oPlayer)
 	gpu_set_fog(false, cor_outline, 0, 0);
 }
 
-
 draw_self();
 #endregion
-
 
