@@ -8,3 +8,10 @@ if (keyboard_check_pressed(ord("E")))
 		pd_dialogar = 0;
 	}
 }
+else
+{
+	if (!instance_exists(oCaixaDialogo) && pd_dialogar == 0)
+	{
+		pd_dialogar = 1;
+	}
+}

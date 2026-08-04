@@ -1,1 +1,0 @@
-tocando = false;

@@ -9,9 +9,52 @@ dialogos = global.dialogo1;
 origem = undefined;
 dialogo_display = "";
 linha_atual = 0;
-carac = 0;
+carac = 1;
 vel = 2;
 vel_dialogo = vel;
+
+card = sFaceCardNaira;
+nome = "";
+cor = c_white;
+
+#region funções
+
+///@function resetarDialogo()
+resetarDialogo = function()
+{
+	if (struct_exists(dialogos[linha_atual], "v"))
+	{
+		vel = dialogos[linha_atual].v;
+	}
+	else
+	{
+		vel = 2;
+	}
+
+	if (struct_exists(dialogos[linha_atual], "c"))
+	{
+		card = dialogos[linha_atual].c;
+		nome = dialogos[linha_atual].n;
+	}
+	else if (struct_exists(dialogos[linha_atual], "p"))
+	{
+		card = global.personagens[dialogos[linha_atual].p].c;
+		nome = global.personagens[dialogos[linha_atual].p].n;
+	}
+
+	if (struct_exists(dialogos[linha_atual], "cor"))
+	{
+		cor = dialogos[linha_atual].cor;
+	}
+	else if (struct_exists(dialogos[linha_atual], "p"))
+	{
+		cor = global.personagens[dialogos[linha_atual].p].cor;
+	}
+	else
+	{
+		cor = c_white
+	}
+}
 
 ///@function dialogo()
 dialogo = function()
@@ -41,13 +84,39 @@ dialogo = function()
 				dialogo_display = "";
 				linha_atual ++;
 				carac = 1;
+				resetarDialogo();
 				vel_dialogo = vel;
 			}
 			else
 			{
 				instance_destroy();
-				origem.pd_dialogar = 1;
 			}
 		}
 	}
+	
+	if (struct_exists(dialogos[linha_atual], "pa"))
+	{
+		if (linha_atual < array_length(dialogos) - 1)
+		{
+			if (carac >= string_length(dialogos[linha_atual].texto))
+			{
+				vel_dialogo --
+				if (vel_dialogo <= 0)
+				{
+					dialogo_display = "";
+					linha_atual ++;
+					carac = 1;
+					resetarDialogo();
+					vel_dialogo = vel;
+				}
+			}
+		}
+		else
+		{
+			instance_destroy();
+		}
+	}
 }
+
+#endregion
+resetarDialogo();
