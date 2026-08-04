@@ -2,6 +2,10 @@
 
 #region variáveis
 
+cam_largura = 384;
+cam_altura	= 216;
+camera_set_view_size(view_camera[0], cam_largura, cam_altura);
+
 //velocidades
 spd		= 1;
 hspd	= 0;
@@ -83,6 +87,19 @@ controle_player = function()
 	}
 	
 	#endregion
+}
+
+///@function camera_function()
+camera_function = function()
+{
+	var x_cam, y_cam;
+	x_cam = (x div cam_largura) * cam_largura
+	y_cam = (y div cam_altura) * cam_altura;
+	
+	var xx = lerp(camera_get_view_x(view_camera[0]), x_cam, .2);
+	var yy = lerp(camera_get_view_y(view_camera[0]), y_cam, .2);
+	
+	camera_set_view_pos(view_camera[0], xx, yy);
 }
 
 #endregion

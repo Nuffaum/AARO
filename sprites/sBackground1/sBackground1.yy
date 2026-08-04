@@ -2,10 +2,10 @@
   "$GMSprite":"v2",
   "%Name":"sBackground1",
   "bboxMode":0,
-  "bbox_bottom":167,
-  "bbox_left":24,
-  "bbox_right":383,
-  "bbox_top":48,
+  "bbox_bottom":175,
+  "bbox_left":16,
+  "bbox_right":1535,
+  "bbox_top":40,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -14,8 +14,8 @@
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"316c7d37-c092-409e-90ba-7a1e50035d41","name":"316c7d37-c092-409e-90ba-7a1e50035d41","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
+  "gridX":8,
+  "gridY":8,
   "height":216,
   "HTile":false,
   "layers":[
@@ -95,5 +95,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":384,
+  "width":1536,
 }
