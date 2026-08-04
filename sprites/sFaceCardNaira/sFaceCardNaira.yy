@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"face cards",
-    "path":"folders/sprites/dialogos/face cards.yy",
+    "path":"folders/Sprites/dialogos/face cards.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

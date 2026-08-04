@@ -27,7 +27,7 @@
   "origin":4,
   "parent":{
     "name":"placehold",
-    "path":"folders/sprites/placehold.yy",
+    "path":"folders/Sprites/placehold.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

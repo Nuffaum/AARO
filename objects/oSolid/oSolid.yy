@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"mapa",
-    "path":"folders/objects/mapa.yy",
+    "path":"folders/Objects/mapa.yy",
   },
   "parentObjectId":null,
   "persistent":false,

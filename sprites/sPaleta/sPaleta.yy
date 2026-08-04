@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"paleta",
-    "path":"folders/sprites/paleta.yy",
+    "path":"folders/Sprites/paleta.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scDialogos",
   "parent":{
-    "name":"scripts",
-    "path":"folders/scripts.yy",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

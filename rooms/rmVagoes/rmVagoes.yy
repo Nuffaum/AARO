@@ -39,8 +39,8 @@
   ],
   "name":"rmVagoes",
   "parent":{
-    "name":"rooms",
-    "path":"folders/rooms.yy",
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

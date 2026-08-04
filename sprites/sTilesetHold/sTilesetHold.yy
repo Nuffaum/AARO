@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"coisas do mapa",
-    "path":"folders/sprites/placehold/coisas do mapa.yy",
+    "path":"folders/Sprites/placehold/coisas do mapa.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
