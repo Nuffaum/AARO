@@ -40,7 +40,6 @@
   "resources":[
     {"id":{"name":"oCaixaDialogo","path":"objects/oCaixaDialogo/oCaixaDialogo.yy",},},
     {"id":{"name":"oDialogos","path":"objects/oDialogos/oDialogos.yy",},},
-    {"id":{"name":"oDialogosOld","path":"objects/oDialogosOld/oDialogosOld.yy",},},
     {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},},
     {"id":{"name":"oMenuHitbox","path":"objects/oMenuHitbox/oMenuHitbox.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},

@@ -6,18 +6,12 @@ fonte		= font_add_sprite_ext(sFont, mapstring, true, 0);
 draw_set_font(fonte);
 
 dialogos = global.dialogo1;
-
+origem = undefined;
 dialogo_display = "";
 linha_atual = 0;
 carac = 0;
 vel = 2;
 vel_dialogo = vel;
-
-///@function resetar()
-resetar = function()
-{
-	
-}
 
 ///@function dialogo()
 dialogo = function()
@@ -35,22 +29,24 @@ dialogo = function()
 	
 	if (keyboard_check_pressed(ord("E")))
 	{
-		if (carac < string_length(dialogo[linha_atual].texto))
+		if (carac < string_length(dialogos[linha_atual].texto))
 		{
-			dialogo_display = dialogo[linha_atual].texto;
-			carac = string_length(dialogo[linha_atual].texto) + 1;
+			dialogo_display = dialogos[linha_atual].texto;
+			carac = string_length(dialogos[linha_atual].texto) + 1;
 		}
 		else
 		{
 			if (linha_atual < array_length(dialogos) - 1)
 			{
-				if (dialogos[linha_atual].c == dialogos[linha_atual + 1].c)
-				{
-					dialogo_display = "";
-					linha_atual ++;
-					carac = 1;
-					vel_dialogo = vel;
-				}
+				dialogo_display = "";
+				linha_atual ++;
+				carac = 1;
+				vel_dialogo = vel;
+			}
+			else
+			{
+				instance_destroy();
+				origem.pd_dialogar = 1;
 			}
 		}
 	}
