@@ -1,0 +1,2 @@
+interacao();
+porta_func();

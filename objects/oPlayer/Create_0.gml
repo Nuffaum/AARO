@@ -42,6 +42,24 @@ controle_player = function()
 		
 		hspd = 0;
 	}
+	//colisao com a porta dos vagao
+	var porta = instance_place(x, y, oPorta)
+	
+	if porta && porta.solido == true
+	{
+		if place_meeting(x + hspd, y, porta)
+		{
+			while !place_meeting(x + sign(hspd), y, porta)
+			{
+				hspd = sign(hspd);
+			}
+			hspd = 0;
+		}
+	}
+	else if porta && porta.solido == false
+	{
+		
+	}
 	
 	x += hspd;
 	
