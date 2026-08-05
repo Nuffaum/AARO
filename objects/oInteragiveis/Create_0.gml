@@ -19,19 +19,26 @@ interacao = function()
 			{
 				case oPorta: //interação da porta
 					
-					var pl = oPlayer;
-					player_pos = [pl.x, pl.y];
+					if pd_int == true
+					{
+						var pl = oPlayer;
+						player_pos = [pl.x, pl.y];
 					
-					porta_fec = true;
-					pd_int = false;
+						porta_fec = true;
+						pd_int = false;
 					
-					image_index += 1;
-					solido = !solido;
+						image_index += 1;
+						solido = !solido;
+					}
 					
 				break;
 				case oTaco:
 					
-					seg_player = true;
+					if pd_int == true
+					{
+						seg_player	= true;
+						pd_int		= false;
+					}
 				
 				break;
 			}

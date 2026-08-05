@@ -49,8 +49,8 @@
   },
   "name":"Nonejam 13",
   "resources":[
-    {"id":{"name":"oBancoChave","path":"objects/oBancoChave/oBancoChave.yy",},},
     {"id":{"name":"oCadeira","path":"objects/oCadeira/oCadeira.yy",},},
+    {"id":{"name":"oCadeiraChave","path":"objects/oCadeiraChave/oCadeiraChave.yy",},},
     {"id":{"name":"oCaixaDialogo","path":"objects/oCaixaDialogo/oCaixaDialogo.yy",},},
     {"id":{"name":"oInteragiveis","path":"objects/oInteragiveis/oInteragiveis.yy",},},
     {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},},
