@@ -74,6 +74,8 @@
     {"id":{"name":"sNuffaumGames","path":"sprites/sNuffaumGames/sNuffaumGames.yy",},},
     {"id":{"name":"sPaleta","path":"sprites/sPaleta/sPaleta.yy",},},
     {"id":{"name":"sPlayerIdle","path":"sprites/sPlayerIdle/sPlayerIdle.yy",},},
+    {"id":{"name":"sPlayerSleep","path":"sprites/sPlayerSleep/sPlayerSleep.yy",},},
+    {"id":{"name":"sPlayerWakeup","path":"sprites/sPlayerWakeup/sPlayerWakeup.yy",},},
     {"id":{"name":"sPlayerWalk","path":"sprites/sPlayerWalk/sPlayerWalk.yy",},},
     {"id":{"name":"sRoomSize","path":"sprites/sRoomSize/sRoomSize.yy",},},
     {"id":{"name":"sSolid","path":"sprites/sSolid/sSolid.yy",},},
