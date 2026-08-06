@@ -1,10 +1,6 @@
 solido	= true;
 pd_int	= true;
 
-//porta
-player_pos	= [0, 0];
-porta_fec	= false;
-
 //tacao de baseball
 seg_player = false;
 
@@ -18,28 +14,17 @@ interacao = function()
 			switch(self.object_index)
 			{
 				case oPorta: //interação da porta
-					
 					if pd_int == true
 					{
-						var pl = oPlayer;
-						player_pos = [pl.x, pl.y];
-					
-						porta_fec = true;
-						pd_int = false;
-					
-						image_index += 1;
-						solido = !solido;
+						instance_destroy(id);
 					}
-					
 				break;
 				case oTaco:
-					
 					if pd_int == true
 					{
 						seg_player	= true;
 						pd_int		= false;
 					}
-				
 				break;
 			}
 		}

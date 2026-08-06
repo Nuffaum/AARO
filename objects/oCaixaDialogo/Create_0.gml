@@ -59,6 +59,7 @@ resetarDialogo = function()
 ///@function dialogo()
 dialogo = function()
 {
+	resetarDialogo();
 	if (carac <= string_length(dialogos[linha_atual].texto))
 	{
 		vel_dialogo --

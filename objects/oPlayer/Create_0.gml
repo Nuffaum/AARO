@@ -4,6 +4,7 @@
 
 cam_largura = 384;
 cam_altura	= 216;
+cam_dist = 361;
 camera_set_view_size(view_camera[0], cam_largura, cam_altura);
 
 //velocidades
@@ -111,7 +112,7 @@ controle_player = function()
 camera_function = function()
 {
 	var x_cam, y_cam;
-	x_cam = (x div cam_largura) * cam_largura
+	x_cam = (x div cam_dist) * cam_dist;
 	y_cam = (y div cam_altura) * cam_altura;
 	
 	var xx = lerp(camera_get_view_x(view_camera[0]), x_cam, .2);

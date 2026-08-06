@@ -1,2 +1,1 @@
 interacao();
-porta_func();

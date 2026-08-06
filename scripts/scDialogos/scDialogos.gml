@@ -24,9 +24,7 @@ global.dialogo1 = [
 ]
 
 global.dialogo2 = [
-
-	{texto: "deixa eu pegar a chave", p: 2, v: 2},
-	{texto: "nop hahahaha", v: 2, p: 1},
-	{texto: "N-U-N-C-A", v: 20, p: 1}
-
+	{texto: "deixa eu pegar a chave", n: "COISUDO", c: sFaceCardNaira, v: 2},
+	{texto: "nop hahahaha", v: 2, p: 2},
+	{texto: "N-U-N-C-A", v: 20, p: 2}
 ]
