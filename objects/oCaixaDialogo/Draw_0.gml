@@ -5,6 +5,7 @@ draw_self();
 draw_sprite_ext(card, 0, x - 112, y, 1, 1, 0, c_white, image_alpha);
 
 //Texto
+draw_set_font(fonte);
 draw_set_color(c_white);
 draw_set_halign(fa_left)
 draw_set_valign(fa_top);

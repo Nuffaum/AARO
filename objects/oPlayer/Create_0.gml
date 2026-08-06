@@ -16,8 +16,16 @@ grav	= .2;
 //pulo
 pulo_spd	= -3;
 
+//cutscene
+frame_i = 0;
+pd_contar = 1;
+repeticoes = 0;
+cuts = 1;
+
+cut_wakeup = 0;
+
 e_frame = 0;
-pd_mover = 1;
+pd_mover = 0;
 #endregion
 
 #region funções
@@ -121,5 +129,69 @@ camera_function = function()
 	camera_set_view_pos(view_camera[0], xx, yy);
 }
 
-#endregion
+///@function cutscenes(cutscene)
+cutscenes = function(cutscene)
+{
+	switch(cutscene)
+	{
+		case 0:
+			if (!cut_wakeup)
+			{
+				camera_set_view_size(view_camera[0], cam_largura/3, cam_altura/3);
+				camera_set_view_pos(view_camera[0], x - camera_get_view_width(view_camera[0])/2, y - (camera_get_view_height(view_camera[0])/2));
+				if (sprite_index == sPlayerSleep)
+				{
+					if (pd_contar)
+					{
+						repeticoes = 1;
+						pd_contar = 0;
+					}
+					if (!pd_contar)
+					{
+						if (image_index < frame_i)
+						{
+						    repeticoes--;
+						}
 
+						frame_i = image_index;
+				
+						if (repeticoes <= 0)
+						{
+							sprite_index = sPlayerWakeup;
+							frame_i = 0;
+							cut_wakeup = 1;
+						}
+					}
+				}
+			}
+			else
+			{
+				if (image_index >= 12)
+				{
+					var cam_ww = lerp(camera_get_view_width(view_camera[0]), cam_largura, 0.2);
+					var cam_hh = lerp(camera_get_view_height(view_camera[0]), cam_altura, 0.2);
+					var cam_x = lerp(camera_get_view_x(view_camera[0]), 0, 0.2);
+					var cam_y = lerp(camera_get_view_y(view_camera[0]), 0, 0.2);
+					camera_set_view_size(view_camera[0], cam_ww, cam_hh);
+					camera_set_view_pos(view_camera[0], cam_x, cam_y);
+				}
+				else
+				{
+					camera_set_view_size(view_camera[0], cam_largura/3, cam_altura/3);
+					camera_set_view_pos(view_camera[0], x - camera_get_view_width(view_camera[0])/2, y - (camera_get_view_height(view_camera[0])/2));
+				}
+				
+				if (image_index < frame_i)
+				{
+					camera_set_view_size(view_camera[0], cam_largura, cam_altura);
+					camera_set_view_pos(view_camera[0], 0, 0);
+					cuts = 0;
+					pd_mover = 1;
+				}
+						
+				frame_i = image_index;
+			}
+			break
+	}
+}
+#endregion

@@ -1,3 +1,10 @@
+switch (cuts)
+{
+	case 1:
+		cutscenes(0);
+		break;
+}
+
 if (pd_mover)
 {
 	controle_player();
@@ -5,3 +12,7 @@ if (pd_mover)
 
 camera_function();
 
+if (keyboard_check_pressed(ord("R")))
+{
+	room_restart();
+}
