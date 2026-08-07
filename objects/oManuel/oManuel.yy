@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"oCadeiraChave",
+  "%Name":"oManuel",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oCadeiraChave",
+  "name":"oManuel",
   "overriddenProperties":[],
   "parent":{
     "name":"objetos",
     "path":"folders/Objects/mapa/objetos.yy",
   },
   "parentObjectId":{
-    "name":"oCadeira",
-    "path":"objects/oCadeira/oCadeira.yy",
+    "name":"oInteragiveis",
+    "path":"objects/oInteragiveis/oInteragiveis.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBancoChave",
-    "path":"sprites/sBancoChave/sBancoChave.yy",
+    "name":"sManualMapa",
+    "path":"sprites/sManualMapa/sManualMapa.yy",
   },
   "spriteMaskId":null,
   "visible":true,

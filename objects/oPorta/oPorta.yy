@@ -10,8 +10,8 @@
   "name":"oPorta",
   "overriddenProperties":[],
   "parent":{
-    "name":"mapa",
-    "path":"folders/Objects/mapa.yy",
+    "name":"objetos",
+    "path":"folders/Objects/mapa/objetos.yy",
   },
   "parentObjectId":{
     "name":"oInteragiveis",

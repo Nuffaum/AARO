@@ -9,7 +9,7 @@ draw_set_font(fonte);
 draw_set_color(c_white);
 draw_set_halign(fa_left)
 draw_set_valign(fa_top);
-draw_text_ext_colour(x - 70, y - 32, dialogo_display, 30, 508, cor, cor, cor, cor, 1);
+draw_text_ext_colour(x - 70, y - 32, dialogo_display, 15, 210, cor, cor, cor, cor, 1);
 
 //Nome
 var largura = string_width(nome) * 2.5 / 35;

@@ -26,6 +26,7 @@ cut_wakeup = 0;
 
 e_frame = 0;
 pd_mover = 0;
+
 #endregion
 
 #region funções

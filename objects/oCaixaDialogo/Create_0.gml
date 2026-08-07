@@ -1,7 +1,7 @@
 image_xscale = 18.5;
 image_yscale = 4.5;
 
-mapstring	= "!#$%&'()*+.-./0123456789:;<=>?@ABCDEÊÉFGHIÍJKLMNOÓPQRSTUÚVWXYZ[]^_`aábcdeêéfghiíjklmnoópqrstuúvwxyz{|}"
+mapstring	= "!#$%&'()*+,-./0123456789:;<=>?@ABCDEÊÉFGHIÍJKLMNOÓPQRSTUÚVWXYZ[]^_`aábcçdeêéfghiíjklmnoópqrstuúvwxyz{|}"
 fonte		= font_add_sprite_ext(sFont, mapstring, true, 0);
 
 dialogos = global.dialogo1;

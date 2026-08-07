@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"oCadeiraChave",
+  "%Name":"oControle",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oCadeiraChave",
+  "name":"oControle",
   "overriddenProperties":[],
   "parent":{
-    "name":"objetos",
-    "path":"folders/Objects/mapa/objetos.yy",
+    "name":"controle do jogo",
+    "path":"folders/Objects/controle do jogo.yy",
   },
-  "parentObjectId":{
-    "name":"oCadeira",
-    "path":"objects/oCadeira/oCadeira.yy",
-  },
-  "persistent":false,
+  "parentObjectId":null,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -32,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sBancoChave",
-    "path":"sprites/sBancoChave/sBancoChave.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

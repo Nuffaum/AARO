@@ -4,6 +4,11 @@ pd_int	= true;
 //tacao de baseball
 seg_player = false;
 
+//manuel manual
+tam			= 0;
+target		= 1;
+int_manual	= false;
+
 ///@function interacao()
 interacao = function()
 {
@@ -20,11 +25,17 @@ interacao = function()
 					}
 				break;
 				case oTaco:
+				if global.venceu_caranguejo == true
+				{
 					if pd_int == true
 					{
 						seg_player	= true;
 						pd_int		= false;
 					}
+				}
+				break;
+				case oManuel:
+					int_manual = true;//ativa a interação com o manuel
 				break;
 			}
 		}

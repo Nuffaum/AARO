@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"oCadeiraChave",
+  "%Name":"oCaranguejo",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oCadeiraChave",
+  "name":"oCaranguejo",
   "overriddenProperties":[],
   "parent":{
-    "name":"objetos",
-    "path":"folders/Objects/mapa/objetos.yy",
+    "name":"personagens",
+    "path":"folders/Objects/mapa/personagens.yy",
   },
   "parentObjectId":{
     "name":"oCadeira",
@@ -33,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBancoChave",
-    "path":"sprites/sBancoChave/sBancoChave.yy",
+    "name":"sCaranguejo",
+    "path":"sprites/sCaranguejo/sCaranguejo.yy",
   },
   "spriteMaskId":null,
   "visible":true,
