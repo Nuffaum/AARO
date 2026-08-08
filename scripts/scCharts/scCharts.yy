@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scCharts",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scCharts",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -31,16 +31,14 @@ global.dialogo2 = [
 
 global.dialogo3 = [
 
-	{texto: "cê quer pegar o taco de baseball daquele cara?...", n: "caranguejao", c: sFaceCardCaranguejo
-		, v:2, p:2},
+	{texto: "cê quer pegar o taco de baseball daquele cara?...", n: "caranguejao", c: sFaceCardCaranguejo, v:2, p:2},
 	{texto: "mas pera...", n: "caranguejao", c: sFaceCardCaranguejo, v: 10, p: 2},
 	{texto: "ce nem sabe dançar KKKKKKKKKKK", c: sFaceCardCaranguejo, n: "caranguejao", v: 1, p: 2}
 ]
 
 global.dialogo4 = [
 
-	{texto: "cê quer pegar o taco de baseball daquele cara?", n: "caranguejao", c: sFaceCardCaranguejo
-		, v:2, p:2},
+	{texto: "cê quer pegar o taco de baseball daquele cara?", n: "caranguejao", c: sFaceCardCaranguejo, v:2, p:2},
 	{texto: "vai ter que me ganhar na dança", n: "caranguejao", v: 2, p:2, c: sFaceCardCaranguejo, t: 2, mg: "dança"}
 	//{texto: }
 ]

@@ -7,8 +7,7 @@ size		= 196;
 size_change = false;
 rm_goto		= rmMenu;
 
-modo_transic = 0;
-
+modo_transic = 0
 ///@function transition_in()
 transition_in = function(rm = rm_goto)
 {
@@ -47,16 +46,6 @@ transition_in = function(rm = rm_goto)
 		
 		if size <= .5
 		{
-			if rm_goto != room//se nao for uma transicao de room, e sim de minigeimis
-			{
-				switch(rm_goto)
-				{
-					case "dança":
-						instance_create_layer(0, 0, "Batalha", oDanca);//minigame da dança sendo criado
-					break;
-				}
-			}
-			
 			instance_destroy();
 		}
 	}
@@ -95,10 +84,26 @@ transition_in = function(rm = rm_goto)
 			{
 				size_change = false;
 				
-				if rm_goto == room
+				if (modo_transic == 0)
 				{
-					room_goto(rm);
+					if room_exists(rm)
+					{
+						room_goto(rm);
+					}
 				}
+				else
+				{
+					switch(rm_goto)
+					{
+						case "dança":
+							instance_create_layer(0, 0, "Batalha", oDanca);//minigame da dança sendo criado
+							layer_set_visible("Fundo_Minigame", true)
+						break;
+					}
+				}
+				
+				size_change = false;
+				starting = 1;
 			}
 		}
 	}

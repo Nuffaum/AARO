@@ -1,2 +1,12 @@
-ir_x = 0;//efeitozinho de se mexer no começo
-ir_y = 0;//mesma coisa soq c o y
+image_xscale = 2;
+image_yscale = 2;
+seta = image_index;
+
+e_frame = 10;
+frame = 0;
+sprite_id = sNairaDancaI;
+
+left = keyboard_check(vk_left) or keyboard_check(ord("A"));
+down = keyboard_check(vk_down) or keyboard_check(ord("S"));
+up = keyboard_check(vk_up) or keyboard_check(ord("W"));
+right = keyboard_check(vk_right) or keyboard_check(ord("D"));

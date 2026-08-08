@@ -94,15 +94,21 @@ dialogo = function()
 					switch(dialogos[linha_atual].t)
 					{
 						case 1://dialogo normal
+							oPlayer.pd_mover = 1;
 							instance_destroy();
 						break;
-						case 2://dialogo com evento
+						case 2://dialogo com minigame
 							abrir_minigame();
+						break;
+						default:
+							oPlayer.pd_mover = 1;
+							instance_destroy();
 						break;
 					}
 				}
 				else
 				{
+					oPlayer.pd_mover = 1;
 					instance_destroy();
 				}
 			}
@@ -136,12 +142,18 @@ dialogo = function()
 ///@function abrir_minigame()
 abrir_minigame = function()
 {
+	oPlayer.pd_mover = 0;
+	oCadeira.minigame = 1;
+	
 	if struct_exists(dialogos[linha_atual], "mg")
 	{
 		switch(dialogos[linha_atual].mg)
 		{
 			case "dança"://minigame da dança insana do caranguejao
-				var inst = instance_create_layer(0, 0, "Batalha", oDanca);
+				var transic = instance_create_layer(0, 0, "Batalha", oTransicao);
+				transic.rm_goto = "dança";
+				transic.starting = false;
+				transic.modo_transic = 1;
 			break;
 		}
 	}

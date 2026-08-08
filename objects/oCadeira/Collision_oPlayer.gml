@@ -12,9 +12,15 @@ if (keyboard_check_pressed(ord("E")))
 }
 else
 {
-	if (!instance_exists(oCaixaDialogo) && pd_dialogar == 0)
+	if (!minigame)
 	{
-		oPlayer.pd_mover = 1;
-		pd_dialogar = 1;
+		if (!instance_exists(oCaixaDialogo) && pd_dialogar == 0)
+		{
+			pd_dialogar = 1;
+		}
+	}
+	else
+	{
+		pd_dialogar = 0;
 	}
 }

@@ -1,3 +1,4 @@
 event_inherited();
 
-key_e = false;
+target = 0;
+tam = 0;

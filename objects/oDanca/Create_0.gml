@@ -1,33 +1,35 @@
-//var transic = instance_create_layer(0, 0, "Batalha", oTransicao);
-//transic.rm_goto = "nenhuma sala";
-//transic.starting = false;
-
 alpha = 0;
 setas = []
 
-locais = [//coordenadas
+coord_player = [//coordenadas
 	{
-		"1": [110, 110],//coords das setas do player
-		"2": [220, 220],
-		"3": [240, 10],
-		"4": [30, 20]
+		"1": [284, 52],//coords das setas do player
+		"2": [340, 108],
+		"3": [284, 164],
+		"4": [228, 108]
 	},
-	
 	{
-		"1": [0, 0],
-		"2": [0, 0],
-		"3": [0, 0],
-		"4": [0, 0]
+		"1": [100, 52],
+		"2": [156, 108],
+		"3": [100, 164],
+		"4": [44, 108]
 	}
 ]
 
 for(var j = 0; j < 2; j ++)
 {
-	for(var i = 0; i < 4; i ++)
+	for(var i = 1; i <= 4; i ++)
 	{
-		var inst = instance_create_layer(0, -32, layer, oSeta);
-		inst.image_index = i;
-		
-		setas[i] = inst.id;
+		var pos = coord_player[j][$ string(i)];
+		var xx = pos[0];
+		var yy = pos[1];
+		var seta = instance_create_layer(xx, yy, layer, oSeta);
+		seta.image_index = i - 1;
+		seta.seta = i - 1;
 	}
+}
+
+if (!audio_is_playing(musSLA))
+{
+	audio_play_sound(musSLA, 1, 0);
 }

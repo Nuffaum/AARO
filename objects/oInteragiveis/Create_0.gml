@@ -12,7 +12,7 @@ int_manual	= false;
 ///@function interacao()
 interacao = function()
 {
-	if place_meeting(x, y, oPlayer)
+	if place_meeting(x, y, oPlayer) && oPlayer.pd_mover
 	{
 		if keyboard_check_pressed(ord("E"))
 		{
@@ -25,21 +25,18 @@ interacao = function()
 					}
 				break;
 				case oTaco:
-				if global.venceu_caranguejo == true
-				{
-					if pd_int == true
+					if global.venceu_caranguejo == true
 					{
-						seg_player	= true;
-						pd_int		= false;
+						if pd_int == true
+						{
+							seg_player	= true;
+							pd_int		= false;
+						}
 					}
-				}
 				break;
 				case oManuel:
-				if int_manual == false
-				{
-					int_manual = true;//ativa a interação com o manuel
+					int_manual = !int_manual; //ativa a interação com o manuel
 					global.sabe_dancar = true;
-				}
 				break;
 			}
 		}
