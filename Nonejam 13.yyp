@@ -58,6 +58,7 @@
   "name":"Nonejam 13",
   "resources":[
     {"id":{"name":"fnt_Pixellari","path":"fonts/fnt_Pixellari/fnt_Pixellari.yy",},},
+    {"id":{"name":"nCodigos","path":"notes/nCodigos/nCodigos.yy",},},
     {"id":{"name":"obj_texto_tela","path":"objects/obj_texto_tela/obj_texto_tela.yy",},},
     {"id":{"name":"oCadeira","path":"objects/oCadeira/oCadeira.yy",},},
     {"id":{"name":"oCadeiraChave","path":"objects/oCadeiraChave/oCadeiraChave.yy",},},
@@ -82,6 +83,7 @@
     {"id":{"name":"scDialogos","path":"scripts/scDialogos/scDialogos.yy",},},
     {"id":{"name":"scFunctions","path":"scripts/scFunctions/scFunctions.yy",},},
     {"id":{"name":"musSLA","path":"sounds/musSLA/musSLA.yy",},},
+    {"id":{"name":"snBarulhoCima","path":"sounds/snBarulhoCima/snBarulhoCima.yy",},},
     {"id":{"name":"sBackground1","path":"sprites/sBackground1/sBackground1.yy",},},
     {"id":{"name":"sBackground2","path":"sprites/sBackground2/sBackground2.yy",},},
     {"id":{"name":"sBanco","path":"sprites/sBanco/sBanco.yy",},},

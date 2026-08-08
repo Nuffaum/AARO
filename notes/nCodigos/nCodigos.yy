@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"nCodigos",
+  "name":"nCodigos",
+  "parent":{
+    "name":"dança",
+    "path":"folders/Objects/mapa/personagens/dança.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

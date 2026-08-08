@@ -17,3 +17,34 @@ tempo_inicio = current_time;
 tempo = tempo_inicio - current_time;
 
 nota = chart[0];
+//countdown
+timer	= 180;//3 segundos
+comecou = false;
+
+//jogo em si
+tipo_seta	= 0;//0 = caranguejo, 1 = Naira
+dir_seta	= image_index;
+alpha_nota	= 0;
+
+///@function func_notas()
+func_notas = function()
+{
+	dir_seta	= image_index;
+	
+	if comecou == true//começou o minigame
+	{
+		//if turno == 0
+		{
+			if tipo_seta == 0//se for a vez do caranguejo
+			{
+				
+			}
+		}
+	}
+	
+	gpu_set_fog(true, -1, 0, 0);
+	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, -1, alpha_nota);
+	gpu_set_fog(false, -1, 0, 0);
+	
+	alpha_nota = lerp(alpha_nota, 0, .2);
+}

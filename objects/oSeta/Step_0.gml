@@ -5,46 +5,49 @@ right = keyboard_check(vk_right) or keyboard_check(ord("D"));
 
 tempo = tempo_inicio - current_time;
 
-switch(seta)
+if tipo_seta == 1
 {
-	case 0:
-		if (up)
-		{
-			image_index = seta + 4;
-		}
-		else
-		{
-			image_index = seta;
-		}
-		break;
-	case 1:
-		if (right)
-		{
-			image_index = seta + 4;
-		}
-		else
-		{
-			image_index = seta;
-		}
-		break;
-	case 2:
-		if (down)
-		{
-			image_index = seta + 4;
-		}
-		else
-		{
-			image_index = seta;
-		}
-		break;
-	case 3:
-		if (left)
-		{
-			image_index = seta + 4;
-		}
-		else
-		{
-			image_index = seta;
-		}
-		break;
+	switch(seta)
+	{
+		case 0:
+			if (up)
+			{
+				image_index = seta + 4;
+			}
+			else
+			{
+				image_index = seta;
+			}
+			break;
+		case 1:
+			if (right)
+			{
+				image_index = seta + 4;
+			}
+			else
+			{
+				image_index = seta;
+			}
+			break;
+		case 2:
+			if (down)
+			{
+				image_index = seta + 4;
+			}
+			else
+			{
+				image_index = seta;
+			}
+			break;
+		case 3:
+			if (left)
+			{
+				image_index = seta + 4;
+			}
+			else
+			{
+				image_index = seta;
+			}
+			break;
+	}
 }
