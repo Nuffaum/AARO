@@ -8,7 +8,7 @@ cam_dist = 361;
 camera_set_view_size(view_camera[0], cam_largura, cam_altura);
 
 //velocidades
-spd		= 1;
+spd		= 1.3;
 hspd	= 0;
 vspd	= 0;
 grav	= .2;

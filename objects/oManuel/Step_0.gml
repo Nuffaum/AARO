@@ -1,3 +1,3 @@
 event_inherited();
 
-key_e = false;
+interacao();

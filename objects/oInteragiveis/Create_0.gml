@@ -35,7 +35,11 @@ interacao = function()
 				}
 				break;
 				case oManuel:
+				if int_manual == false
+				{
 					int_manual = true;//ativa a interação com o manuel
+					global.sabe_dancar = true;
+				}
 				break;
 			}
 		}

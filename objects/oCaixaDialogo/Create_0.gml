@@ -89,7 +89,22 @@ dialogo = function()
 			}
 			else
 			{
-				instance_destroy();
+				if struct_exists(dialogos[linha_atual], "t")
+				{
+					switch(dialogos[linha_atual].t)
+					{
+						case 1://dialogo normal
+							instance_destroy();
+						break;
+						case 2://dialogo com evento
+							abrir_minigame();
+						break;
+					}
+				}
+				else
+				{
+					instance_destroy();
+				}
 			}
 		}
 	}
@@ -116,6 +131,22 @@ dialogo = function()
 			instance_destroy();
 		}
 	}
+}
+
+///@function abrir_minigame()
+abrir_minigame = function()
+{
+	if struct_exists(dialogos[linha_atual], "mg")
+	{
+		switch(dialogos[linha_atual].mg)
+		{
+			case "dança"://minigame da dança insana do caranguejao
+				var inst = instance_create_layer(0, 0, "Batalha", oDanca);
+			break;
+		}
+	}
+	
+	instance_destroy();
 }
 
 #endregion

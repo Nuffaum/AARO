@@ -3,6 +3,11 @@ if x >= 400
 	instance_destroy();
 }
 
+if variable_global_exists("global.sabe_dancar")
+{
+	sabe = global.sabe_dancar;
+}
+
 if venceu == false
 {
 	if global.sabe_dancar == false
