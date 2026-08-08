@@ -1,36 +1,37 @@
 draw_self();
 
+var novo_sprite;
+
 if (seta == 1)
 {
     // Pega o centro da câmera
     var centro_cam = camera_get_view_x(view_camera[0])
                    + camera_get_view_width(view_camera[0]) / 2;
 
-    var novo_sprite;
-
     // Primeira metade da câmera = Caranguejo
     if (x < centro_cam)
     {
-        if (left)
-        {
-            novo_sprite = sCaranguejoDancaL;
-        }
-        else if (up)
-        {
-            novo_sprite = sCaranguejoDancaU;
-        }
-        else if (right)
-        {
-            novo_sprite = sCaranguejoDancaR;
-        }
-        else if (down)
-        {
-            novo_sprite = sCaranguejoDancaD;
-        }
-        else
-        {
-            novo_sprite = sCaranguejoDancaI;
-        }
+		if (tempo == nota.t)
+		{
+			if (nota.p == 0)
+			{
+				switch(nota.n)
+				{
+					case 1:
+						novo_sprite = sCaranguejoDancaU;
+						break;
+					case 2:
+						novo_sprite = sCaranguejoDancaR;
+						break;
+					case 3:
+						novo_sprite = sCaranguejoDancaD;
+						break;
+					case 4:
+						novo_sprite = sCaranguejoDancaL;
+						break;
+				}
+			}
+		}
     }
     // Segunda metade da câmera = Naira
     else
