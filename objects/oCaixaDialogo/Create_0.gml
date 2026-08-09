@@ -104,7 +104,6 @@ dialogo = function()
 							oPlayer.pd_mover = 1;
 							instance_destroy();
 						break;
-					}
 				}
 				else
 				{

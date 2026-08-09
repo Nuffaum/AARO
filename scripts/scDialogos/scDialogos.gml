@@ -44,8 +44,6 @@ global.dialogo4 = [
 ]
 
 global.dialogo5 = [
-	
 	{texto: "cê já se provou um verdadeiro...", n: "caranguejao", c: sFaceCardCaranguejo, v: 2, p: 2},
 	{texto: "mestre da dança", n: "caranguejao", c: sFaceCardCaranguejo, v: 2, p: 2}
-	
 ]

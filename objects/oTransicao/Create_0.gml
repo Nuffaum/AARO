@@ -96,8 +96,16 @@ transition_in = function(rm = rm_goto)
 					switch(rm_goto)
 					{
 						case "dança":
-							instance_create_layer(0, 0, "Batalha", oDanca);//minigame da dança sendo criado
+							if (!instance_exists(oDanca))
+							{
+								instance_create_layer(0, 0, "Batalha", oDanca);//minigame da dança sendo criado
+							}
 							layer_set_visible("Fundo_Minigame", true)
+						break;
+						case "pós-dança":
+							instance_destroy(oSeta);
+							instance_destroy(oDanca);
+							layer_set_visible("Fundo_Minigame", false)
 						break;
 					}
 				}

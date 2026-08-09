@@ -1,6 +1,1 @@
-with(oDanca)
-{
-	decidir();
-}
-
-alarm[0] = beat;
+global.comecou = 1

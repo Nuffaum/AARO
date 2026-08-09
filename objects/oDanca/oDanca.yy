@@ -14,7 +14,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"dança",
-    "path":"folders/Objects/mapa/personagens/dança.yy",
+    "path":"folders/Objects/dança.yy",
   },
   "parentObjectId":null,
   "persistent":false,

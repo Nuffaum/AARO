@@ -1,53 +1,50 @@
-left = keyboard_check(vk_left) or keyboard_check(ord("A"));
-down = keyboard_check(vk_down) or keyboard_check(ord("S"));
-up = keyboard_check(vk_up) or keyboard_check(ord("W"));
-right = keyboard_check(vk_right) or keyboard_check(ord("D"));
+left = keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A"));
+down = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
+up = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
+right = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"));
 
-tempo = tempo_inicio - current_time;
-
-if tipo_seta == 1
+if (global.comecou)
 {
-	switch(seta)
+	if (!audio_is_playing(musSLA))
 	{
-		case 0:
-			if (up)
-			{
-				image_index = seta + 4;
-			}
-			else
-			{
-				image_index = seta;
-			}
-			break;
-		case 1:
-			if (right)
-			{
-				image_index = seta + 4;
-			}
-			else
-			{
-				image_index = seta;
-			}
-			break;
-		case 2:
-			if (down)
-			{
-				image_index = seta + 4;
-			}
-			else
-			{
-				image_index = seta;
-			}
-			break;
-		case 3:
-			if (left)
-			{
-				image_index = seta + 4;
-			}
-			else
-			{
-				image_index = seta;
-			}
-			break;
+		audio_play_sound(musSLA, 1, 0);
 	}
+	
+	if (control)
+	{
+		func_notas();
+	}
+	
+	if (tipo_seta == 1)
+	{
+		if (seta == 0 && global.novo_sprite_c == sCaranguejoDancaU)
+		{
+			sprite_index = sSetaDirApertando;
+		}
+		else if (seta == 1 && global.novo_sprite_c == sCaranguejoDancaR)
+		{
+			sprite_index = sSetaDirApertando;
+		}
+		else if (seta == 2 && global.novo_sprite_c == sCaranguejoDancaD)
+		{
+			sprite_index = sSetaDirApertando;
+		}
+		else if (seta == 3 && global.novo_sprite_c == sCaranguejoDancaL)
+		{
+			sprite_index = sSetaDirApertando;
+		}
+		else
+		{
+			sprite_index = sSetaDir;
+		}
+	}
+	else
+	{
+		
+	}
+}
+else
+{
+	x = lerp(x, camera_get_view_x(view_camera[0]) + xx, 0.1);
+	y = lerp(y, camera_get_view_y(view_camera[0]) + yy, 0.1);
 }
