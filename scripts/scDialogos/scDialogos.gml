@@ -12,7 +12,7 @@ c = imagem de quem tá falando
 
 global.personagens = [
 	{n: "Naira", c: sFaceCardNaira, cor: c_white},
-	{n: "AAROMIN", c: sFaceCardNaira_1, cor: c_white},
+	{n: "AAROMIN", c: sFaceCardAAROMIN, cor: c_white},
 	{n: "Cadeira", c: sFaceCardCadeira, cor: c_white},
 	{n: "Cadeira Lixo", c: sFaceCardCadeira, cor: c_white},
 	{n: "CarangueJÃO", c: sFaceCardCaranguejo, cor: c_white}
@@ -71,19 +71,19 @@ global.dialogo6 = [
 ]
 
 global.diag_aaromin1 = [//AAROMIN texto 1
-	{texto: "Bom dia, flor do dia!! ('u')", n: "???", p: 1},
-	{texto: "Bilhete por favor", n: "???", p: 1},
+	{texto: "Bom dia, flor do dia!! ('u')", n: "???", c: sFaceCardAAROMIN},
+	{texto: "Bilhete por favor", n: "???", c: sFaceCardAAROMIN},
 	{texto: "O que...?", p: 0},
-	{texto: "Não tem bilhete?? Poxa... :/", n: "???", p: 1},
+	{texto: "Não tem bilhete?? Poxa... :/", n: "???", c: sFaceCardAAROMIN},
 	{texto: "Que lugar é esse...?", p: 0},
-	{texto: "Bem-vinda ao Metrô AARO!", n: "???", p: 1},
+	{texto: "Bem-vinda ao Metrô AARO!", n: "???", c: sFaceCardAAROMIN},
 	{texto: "Meu nome é AAROMIN, sua assistente! (~´3`~)", p: 1},
 	{texto: "Infelizmente, você não deveria estar aqui sem bilhete.", p: 1},
 	{texto: "Então teremos que expulsá-la pra fora do trem ToT", p: 1},
 	{texto: "O que?? Mas a gente tá no meio do espaço!!", p: 0},
 	{texto: "Não se preocupe, os nossos funcionários sabem muito bem o que estão fazendo ;)", p: 1},
 	{texto: "Falha na comunicação", p: 1, cor: c_red},
-	{texto: "Mmm, estranho... Bom, tudo bem! O metrô não vai parar até conseguirmos entrar em contato com a equipe, ok? ;)", p: 1},
+	{texto: "Mmm, estranho... Bom, tudo bem! O metrô não vai parar até conseguirmos entrar em contato com a equipe, ok?", p: 1},
 	{texto: "E mais ou menos quanto tempo vou ter que esperar...? Eu meio que tinha compromisso...", p: 0},
 	{texto: "Calculando...", p: 1, v: 10, pa: true, cor: c_yellow},
 	{texto: "Aproximadamente até 00:00 de 31 de dezembro de 1969 :D", p: 1},
@@ -113,4 +113,14 @@ global.diag_aaromin2 = [//AAROMIN texto 2
 global.diag_aaromin2p2 = [//AAROMIN texto 2.5
 	{texto: "Pode liberar agora?", p: 0},
 	{texto: "Liberado, chefia ^w^", p: 1, t: 4}	
+]
+
+global.diag_cerimonia = [
+	{texto: "Estamos aqui reunidos para relembrar o nome de CarangueJÃO", n: "CarangueJIN", c: sFaceCardCaranguejo},
+	{texto: "Ó, meu irmão, sentiremos tanto a sua falta...", n: "CarangueJIN", c: sFaceCardCaranguejo},
+	{texto: "E prometemos, se a criatura terrível que fez isso com você aparecer, não teremos perdão!!", n: "CarangueJIN", c: sFaceCardCaranguejo},
+	{texto: "...", p: 0},
+	{texto: "EI, NÃO É ELA ALI???", n: "CarangueJUNIOR", c: sFaceCardCaranguejo},
+	{texto: "É ELA MESMA", n: "CarangueJOHN", c: sFaceCardCaranguejo},
+	{texto: "PEGA ELA!!", n: "CarangueJUH", c: sFaceCardCaranguejo, t: 5},
 ]

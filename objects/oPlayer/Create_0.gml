@@ -195,6 +195,16 @@ cutscenes = function(cutscene)
 				frame_i = image_index;
 			}
 			break
+		case 1:
+			if (!instance_exists(oCaixaDialogo) and pd_mover)
+			{
+				var diag = instance_create_layer(camera_get_view_x(view_camera) + 192, 44, "Dialogos", oCaixaDialogo);
+				diag.dialogos = global.diag_cerimonia;
+				diag.origem = id;
+				sprite_index = sPlayerIdle;
+				pd_mover = 0;
+			}
+			break
 	}
 }
 #endregion

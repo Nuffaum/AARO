@@ -110,6 +110,10 @@ dialogo = function()
 							origem.porta_id.trancado = 0;
 							oPlayer.pd_mover = 1;
 							instance_destroy();
+						break;
+						case 5:
+							oCaranguejos.hspeed = -5
+							instance_destroy();
 						break
 						default:
 							oPlayer.pd_mover = 1;
