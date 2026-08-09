@@ -45,5 +45,25 @@ global.dialogo4 = [
 
 global.dialogo5 = [
 	{texto: "cê já se provou um verdadeiro...", n: "caranguejao", c: sFaceCardCaranguejo, v: 2, p: 2},
-	{texto: "mestre da dança", n: "caranguejao", c: sFaceCardCaranguejo, v: 2, p: 2}
+	{texto: "mestre da dança", n: "caranguejao", c: sFaceCardCaranguejo, v: 2, p: 2, t: 3}
+]
+
+global.dialogo6 = [
+	{texto: "calma aí, num precisa de violência...", n: "caranguejo", c: sFaceCardCaranguejo, v: 5, p: 2, pa: 1},
+	{texto: "PARAAAA, SAI DJABO", n: "caranguejo puto", c: sFaceCardCaranguejo, v: 5, p: 2, pa: 1},
+	{texto: "VAZA DAQUI", n: "caranguejo puto", c: sFaceCardCaranguejo, v: 5, p: 2, pa: 1},
+	{texto: "SAI", n: "caranguejo puto", c: sFaceCardCaranguejo, v: 5, p: 2, pa: 1},
+	{texto: "SAI DAQUI NAMORAL", n: "caranguejo puto", c: sFaceCardCaranguejo, v: 5, p: 2, pa: 1},
+	{texto: "SAI SAI SAI", n: "caranguejo puto", c: sFaceCardCaranguejo, v: 5, p: 2, pa: 1},
+	{texto: "SAAAAAI", n: "caranguejo puto", c: sFaceCardCaranguejo, v: 5, p: 2, pa: 1},
+	{texto: "SAAAAAI", n: "caranguejo puto", c: sFaceCardCaranguejo, v: 5, p: 2, pa: 1},
+	{texto: "SAAAAAI", n: "caranguejo puto", c: sFaceCardCaranguejo, v: 5, p: 2, pa: 1},
+	{texto: "SAAAAAI", n: "caranguejo puto", c: sFaceCardCaranguejo, v: 5, p: 2, pa: 1},
+	{texto: "SAAAAAI", n: "caranguejo puto", c: sFaceCardCaranguejo, v: 5, p: 2, pa: 1},
+]
+
+global.dialogo7 = [//AAROMIN texto 1
+	{texto: "Bom dia flor do dia! :D", n: "AAROMIN", c: sFaceCardNaira, v: 1, p: 2},
+	{texto: "O que... tá acontecendo?!", n: "Naira", c: sFaceCardNaira, v: 3, p: 2},
+	
 ]

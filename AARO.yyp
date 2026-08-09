@@ -61,6 +61,7 @@
   "name":"Nonejam 13",
   "resources":[
     {"id":{"name":"fnt_Pixellari","path":"fonts/fnt_Pixellari/fnt_Pixellari.yy",},},
+    {"id":{"name":"oAAROMIN","path":"objects/oAAROMIN/oAAROMIN.yy",},},
     {"id":{"name":"obj_texto_tela","path":"objects/obj_texto_tela/obj_texto_tela.yy",},},
     {"id":{"name":"oCadeira","path":"objects/oCadeira/oCadeira.yy",},},
     {"id":{"name":"oCadeiraChave","path":"objects/oCadeiraChave/oCadeiraChave.yy",},},
@@ -83,6 +84,7 @@
     {"id":{"name":"rmVagoes","path":"rooms/rmVagoes/rmVagoes.yy",},},
     {"id":{"name":"scDialogos","path":"scripts/scDialogos/scDialogos.yy",},},
     {"id":{"name":"scFunctions","path":"scripts/scFunctions/scFunctions.yy",},},
+    {"id":{"name":"musOST0","path":"sounds/musOST0/musOST0.yy",},},
     {"id":{"name":"musSLA","path":"sounds/musSLA/musSLA.yy",},},
     {"id":{"name":"sndAcerto","path":"sounds/sndAcerto/sndAcerto.yy",},},
     {"id":{"name":"sndDownC","path":"sounds/sndDownC/sndDownC.yy",},},
@@ -95,6 +97,7 @@
     {"id":{"name":"sndRightN","path":"sounds/sndRightN/sndRightN.yy",},},
     {"id":{"name":"sndUpC","path":"sounds/sndUpC/sndUpC.yy",},},
     {"id":{"name":"sndUpN","path":"sounds/sndUpN/sndUpN.yy",},},
+    {"id":{"name":"sAAROMIN","path":"sprites/sAAROMIN/sAAROMIN.yy",},},
     {"id":{"name":"sAcertoErro","path":"sprites/sAcertoErro/sAcertoErro.yy",},},
     {"id":{"name":"sBackground1","path":"sprites/sBackground1/sBackground1.yy",},},
     {"id":{"name":"sBackground2","path":"sprites/sBackground2/sBackground2.yy",},},

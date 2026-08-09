@@ -151,12 +151,19 @@ func_notas = function()
 					conta ++;
 					n_setas = n_setas_inicio + conta;
 					
-					if (conta == 10)
+					if (conta == 2)
 					{
 						var transic = instance_create_layer(0, 0, "Batalha", oTransicao);
 						transic.rm_goto = "pós-dança";
 						transic.starting = false;
 						transic.modo_transic = 1;
+						oPlayer.pd_mover = true;
+						global.venceu_caranguejo = true;
+						oCaranguejo.pd_dialogar = true;
+						//oCaranguejo.hspeed = 3;
+						audio_stop_all();
+						instance_destroy(oDanca);
+						instance_destroy();
 					}
 					global.seq_setas = [];
 					tempo = 30;
