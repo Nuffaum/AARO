@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oCaranguejo",
+  "%Name":"oAAROMIN",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oCaranguejo",
+  "name":"oAAROMIN",
   "overriddenProperties":[],
   "parent":{
-    "name":"dança",
-    "path":"folders/Objects/dança.yy",
+    "name":"personagens",
+    "path":"folders/Objects/mapa/personagens.yy",
   },
   "parentObjectId":{
     "name":"oCadeira",
@@ -36,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCaranguejo",
-    "path":"sprites/sCaranguejo/sCaranguejo.yy",
+    "name":"sAAROMIN",
+    "path":"sprites/sAAROMIN/sAAROMIN.yy",
   },
   "spriteMaskId":null,
   "visible":true,

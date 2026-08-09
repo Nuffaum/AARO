@@ -78,5 +78,5 @@ if (global.comecou and control)
 {
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_top);
-	draw_text_transformed(display_get_gui_width() / 2, 30, $"{conta}/{10}", 10, 10, 0);
+	draw_text_transformed(display_get_gui_width() / 2, 30, $"{conta}/{2}", 10, 10, 0);
 }

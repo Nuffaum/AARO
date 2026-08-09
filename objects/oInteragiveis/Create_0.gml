@@ -2,7 +2,8 @@ solido	= true;
 pd_int	= true;
 
 //tacao de baseball
-seg_player = false;
+seg_player	= false;
+matar		= false;
 
 //manuel manual
 tam			= 0;
@@ -21,16 +22,24 @@ interacao = function()
 				case oPorta: //interação da porta
 					if pd_int == true
 					{
-						instance_destroy(id);
+						if trancado == false
+						{
+							instance_destroy(id);
+						}
 					}
 				break;
 				case oTaco:
-					if global.venceu_caranguejo == true
+					//if global.venceu_caranguejo == true
 					{
 						if pd_int == true
 						{
 							seg_player	= true;
 							pd_int		= false;
+							
+							if global.sabe_dancar == false
+							{
+								matar = true;
+							}
 						}
 					}
 				break;

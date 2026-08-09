@@ -1,6 +1,11 @@
-if x >= 400
+if x >= 1000
 {
 	instance_destroy();
+}
+
+if variable_global_exists("global.venceu_caranguejo")
+{
+	venceu = global.venceu_caranguejo;
 }
 
 if variable_global_exists("global.sabe_dancar")
@@ -8,7 +13,7 @@ if variable_global_exists("global.sabe_dancar")
 	sabe = global.sabe_dancar;
 }
 
-if venceu == false
+if global.venceu_caranguejo == false
 {
 	if global.sabe_dancar == false
 	{
@@ -19,7 +24,7 @@ if venceu == false
 		dialogo = global.dialogo4;
 	}
 }
-else
+else if global.venceu_caranguejo == true
 {
-	dialogos = global.dialogo4;//texto que tu ja ganhou do caranguejo
+	dialogos = global.dialogo5;//texto que tu ja ganhou do caranguejo
 }

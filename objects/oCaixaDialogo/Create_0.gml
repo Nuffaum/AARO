@@ -100,10 +100,16 @@ dialogo = function()
 						case 2://dialogo com minigame
 							abrir_minigame();
 						break;
+						case 3://dialogo com movimento depois (caranguejo)
+							oCaranguejo.hspeed = 3;
+							oPlayer.pd_mover = true;
+							instance_destroy();
+						break;
 						default:
 							oPlayer.pd_mover = 1;
 							instance_destroy();
 						break;
+					}
 				}
 				else
 				{
