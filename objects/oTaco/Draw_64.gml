@@ -27,6 +27,7 @@ if morte_caranguejo == true
 	{
 		if alpha <= .9
 		{
+			global.pd_abrir = 1;
 			oPlayer.pd_mover = true;
 			image_alpha = 0;
 		}

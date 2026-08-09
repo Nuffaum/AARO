@@ -1,3 +1,5 @@
 event_inherited();
 
-dialogos = global.dialogo7;
+pd_abrir = 0;
+dialogos = dialog1;
+vagao = (x div oPlayer.cam_dist);

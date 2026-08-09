@@ -105,6 +105,14 @@ transition_in = function(rm = rm_goto)
 						case "pós-dança":
 							instance_destroy(oSeta);
 							instance_destroy(oDanca);
+							oPlayer.pd_mover = true;
+							global.venceu_caranguejo = true;
+							global.pd_abrir = 1;
+							oCaranguejo.pd_dialogar = true;
+							
+							global.minigame = 0;
+							//oCaranguejo.hspeed = 3;
+							audio_stop_all();
 							layer_set_visible("Fundo_Minigame", false)
 						break;
 					}

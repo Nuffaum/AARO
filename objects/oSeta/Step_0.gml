@@ -45,6 +45,6 @@ if (global.comecou)
 }
 else
 {
-	x = lerp(x, camera_get_view_x(view_camera[0]) + xx, 0.1);
-	y = lerp(y, camera_get_view_y(view_camera[0]) + yy, 0.1);
+	x = lerp(x, xx, 0.1);
+	y = lerp(y, yy, 0.1);
 }

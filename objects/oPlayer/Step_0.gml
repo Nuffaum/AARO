@@ -14,5 +14,6 @@ camera_function();
 
 if (keyboard_check_pressed(ord("R")))
 {
+	global.reinicou = 1;
 	room_restart();
 }

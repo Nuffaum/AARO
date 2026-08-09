@@ -157,11 +157,6 @@ func_notas = function()
 						transic.rm_goto = "pós-dança";
 						transic.starting = false;
 						transic.modo_transic = 1;
-						oPlayer.pd_mover = true;
-						global.venceu_caranguejo = true;
-						oCaranguejo.pd_dialogar = true;
-						//oCaranguejo.hspeed = 3;
-						audio_stop_all();
 						instance_destroy(oDanca);
 						instance_destroy();
 					}

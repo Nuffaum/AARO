@@ -127,6 +127,8 @@ camera_function = function()
 	var xx = lerp(camera_get_view_x(view_camera[0]), x_cam, .2);
 	var yy = lerp(camera_get_view_y(view_camera[0]), y_cam, .2);
 	
+	global.vagao = (x div cam_dist);
+	
 	camera_set_view_pos(view_camera[0], xx, yy);
 }
 

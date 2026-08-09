@@ -1,5 +1,7 @@
 draw_self();
 
+
+
 if (seta == 1)
 {
 	if (tipo_seta == 1)

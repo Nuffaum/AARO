@@ -24,22 +24,20 @@ interacao = function()
 					{
 						if trancado == false
 						{
+							global.pd_abrir = 0;
 							instance_destroy(id);
 						}
 					}
 				break;
 				case oTaco:
-					//if global.venceu_caranguejo == true
+					if pd_int == true
 					{
-						if pd_int == true
-						{
-							seg_player	= true;
-							pd_int		= false;
+						seg_player	= true;
+						pd_int		= false;
 							
-							if global.sabe_dancar == false
-							{
-								matar = true;
-							}
+						if global.sabe_dancar == false
+						{
+							matar = true;
 						}
 					}
 				break;

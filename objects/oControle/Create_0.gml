@@ -1,2 +1,1 @@
-global.sabe_dancar		 = false;
-global.venceu_caranguejo = false;
+global.pd_abrir = 0;

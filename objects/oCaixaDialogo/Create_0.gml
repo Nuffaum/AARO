@@ -1,7 +1,7 @@
 image_xscale = 18.5;
 image_yscale = 4.5;
 
-mapstring	= "!#$%&'()*+,-./0123456789:;<=>?@ABCDEÊÉFGHIÍJKLMNOÓPQRSTUÚVWXYZ[]^_`aábcçdeêéfghiíjklmnoópqrstuúvwxyz{|}"
+mapstring	= "!#$%&'()*+,-./0123456789:;<=>?@AÁÂÃBCDEÉÊFGHIÍJKLMNOÓÔÕPQRSTUÚVWXYZ[]~^_`´aáâãbcçdeéêfghiíjklmnoóôõpqrstuúvwxyz{|}"
 fonte		= font_add_sprite_ext(sFont, mapstring, true, 0);
 
 dialogos = global.dialogo1;
@@ -105,6 +105,12 @@ dialogo = function()
 							oPlayer.pd_mover = true;
 							instance_destroy();
 						break;
+						case 4:							
+							global.pd_abrir = 1
+							origem.porta_id.trancado = 0;
+							oPlayer.pd_mover = 1;
+							instance_destroy();
+						break
 						default:
 							oPlayer.pd_mover = 1;
 							instance_destroy();
@@ -148,7 +154,7 @@ dialogo = function()
 abrir_minigame = function()
 {
 	oPlayer.pd_mover = 0;
-	oCadeira.minigame = 1;
+	global.minigame = 1;
 	
 	if struct_exists(dialogos[linha_atual], "mg")
 	{

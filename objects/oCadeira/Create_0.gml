@@ -1,3 +1,3 @@
 pd_dialogar = 1;
-minigame = 0;
+global.minigame = 0;
 dialogos = global.dialogo1;

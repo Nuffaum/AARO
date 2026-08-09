@@ -12,7 +12,7 @@ if (keyboard_check_pressed(ord("E")))
 }
 else
 {
-	if (!minigame)
+	if (!global.minigame)
 	{
 		if (!instance_exists(oCaixaDialogo) && pd_dialogar == 0)
 		{

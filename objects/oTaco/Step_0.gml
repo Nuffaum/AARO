@@ -7,4 +7,9 @@ if seg_player == true
 	image_xscale = oPlayer.image_xscale;
 }
 
+if (global.sabe_dancar)
+{
+	instance_destroy();
+}
+
 interacao();

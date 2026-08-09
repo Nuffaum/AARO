@@ -1,4 +1,4 @@
-if x >= 1000
+if (x >= camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) and hspeed > 0)
 {
 	instance_destroy();
 }
@@ -21,10 +21,10 @@ if global.venceu_caranguejo == false
 	}
 	else
 	{
-		dialogo = global.dialogo4;
+		dialogos = global.dialogo4;
 	}
 }
-else if global.venceu_caranguejo == true
+else
 {
 	dialogos = global.dialogo5;//texto que tu ja ganhou do caranguejo
 }

@@ -1,3 +1,4 @@
+
 if (audio_is_playing(sndAcerto))
 {
 	draw_sprite_ext(

@@ -2,8 +2,7 @@ if int_manual == true and place_meeting(x, y, oPlayer)
 {
 	if keyboard_check_released(ord("E"))
 	{
-		tam	= lerp(tam, target, .2);
-		oCaranguejo.dialogos = global.dialogo4;
+		tam	= lerp(tam, target, .2);		
 		int_manual = false;
 	}
 	
