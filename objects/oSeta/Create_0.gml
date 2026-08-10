@@ -151,7 +151,7 @@ func_notas = function()
 					conta ++;
 					n_setas = n_setas_inicio + conta;
 					
-					if (conta == 7)
+					if (conta == 4)
 					{
 						var transic = instance_create_layer(0, 0, "Batalha", oTransicao);
 						transic.rm_goto = "pós-dança";

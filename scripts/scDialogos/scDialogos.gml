@@ -139,7 +139,7 @@ global.diag_aaromin4 = [//AAROMIN texto 3
 ]
 
 global.diag_aaromin_place = [//AAROMIN texto 3
-	{texto: "placeholder", p: 1},
+	{texto: "placeholder", p: 1, t: 4},
 ]
 
 global.diag_aaromin_final = [//AAROMIN texto 3
@@ -191,5 +191,5 @@ global.diag_cara1 = [
 global.diag_cara2 = [
 	{texto: "ummm, esse cheiro é dos terríveis", n: "Cara(eca)", c: sCareca},
 	{texto: "toma, a moeda é sua", n: "Cara(eca)", c: sCareca},
-	{texto: "valeu... eu acho", p: 0, pa: true, t: 7},
+	{texto: "valeu... eu acho", p: 0, t: 7}
 ]

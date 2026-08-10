@@ -19,11 +19,11 @@ if (global.vagao == 4)
 	}
 }
 
-if (global.vagao == 5)
+if (global.vagao == 6)
 {
 	if (instance_exists(oCoelho))
 	{
-		if (cheiro != "nada" and  x >= 1985)
+		if (cheiro != "nada" and  x >= 2343)
 		{
 			cuts = 3;
 		}
@@ -41,3 +41,14 @@ if (pd_mover)
 }
 
 camera_function();
+
+if (keyboard_check_pressed(ord("R")))
+{
+	global.reinicou = 1;
+	room_restart();
+}
+
+if (keyboard_check_pressed(ord("Q")))
+{
+	global.sabe_dancar = 1;
+}

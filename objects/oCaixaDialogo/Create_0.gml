@@ -123,7 +123,7 @@ dialogo = function()
 							oCaranguejos.hspeed = -5
 							instance_destroy();
 						break
-						case 7://dialogo normal
+						case 7:
 							oPlayer.pd_mover = 1;
 							oPlayer.moeda = 1;
 							instance_destroy();
