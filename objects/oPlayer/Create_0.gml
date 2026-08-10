@@ -7,6 +7,8 @@ cam_altura	= 216;
 cam_dist = 361;
 camera_set_view_size(view_camera[0], cam_largura, cam_altura);
 
+cheiro = "nada";
+
 //velocidades
 spd		= 1.3;
 hspd	= 0;
@@ -23,9 +25,12 @@ repeticoes = 0;
 cuts = 1;
 
 cut_wakeup = 0;
+tempo = 60;
 
 e_frame = 0;
 pd_mover = 0;
+
+moeda = 0;
 
 #endregion
 
@@ -52,6 +57,7 @@ controle_player = function()
 		
 		hspd = 0;
 	}
+	
 	//colisao com a porta dos vagao
 	var porta = instance_place(x, y, oPorta)
 	
@@ -88,18 +94,40 @@ controle_player = function()
 	#endregion
 	
 	#region pulao do player e gravidade
-	
+
 	var chao = place_meeting(x, y + 1, oSolid);
-	
-	if !chao
+	var aspirador = instance_place(x, y + 1, oAspirador);
+
+	if (aspirador != noone)
 	{
-		vspd += grav;
+		if (aspirador.pd_andar)
+		{
+			// Está em cima do aspirador
+			if (aspirador != noone && vspd >= 0)
+			{
+			    chao = true;
+
+			    // Coloca o player exatamente em cima do aspirador
+			    y = aspirador.bbox_top - (bbox_bottom - y);
+
+			    // Acompanha o movimento horizontal
+			    x += aspirador.x - aspirador.x_anterior;
+
+			    // Para a queda
+			    vspd = 0;
+			}
+		}
 	}
-	else if pulo
+
+	if (!chao)
 	{
-		vspd = pulo_spd;
+	    vspd += grav;
 	}
-	
+	else if (pulo)
+	{
+	    vspd = pulo_spd;
+	}
+
 	#endregion
 	
 	#region sprites
@@ -135,6 +163,7 @@ camera_function = function()
 ///@function cutscenes(cutscene)
 cutscenes = function(cutscene)
 {
+	audio_stop_sound(musOST1);
 	switch(cutscene)
 	{
 		case 0:
@@ -199,10 +228,31 @@ cutscenes = function(cutscene)
 			if (!instance_exists(oCaixaDialogo) and pd_mover)
 			{
 				var diag = instance_create_layer(camera_get_view_x(view_camera) + 192, 44, "Dialogos", oCaixaDialogo);
-				diag.dialogos = global.diag_cerimonia;
+				if (global.caranguejo_morto)
+				{
+					diag.dialogos = global.diag_cerimonia;
+				}
+				else
+				{
+					diag.dialogos = global.diag_comemoracao;
+				}
 				diag.origem = id;
 				sprite_index = sPlayerIdle;
 				pd_mover = 0;
+			}
+			break
+		case 2:
+			pd_mover = 0;
+			sprite_index = sPlayerIdle;
+			tempo --
+			
+			if (instance_exists(oCoelho))
+			{
+				if (tempo <= 0 and oCoelho.sentido != cheiro)
+				{
+					oCoelho.cheiro = 1;
+					oCoelho.sentido = cheiro;
+				}
 			}
 			break
 	}

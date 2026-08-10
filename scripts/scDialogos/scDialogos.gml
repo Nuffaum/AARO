@@ -112,7 +112,39 @@ global.diag_aaromin2 = [//AAROMIN texto 2
 
 global.diag_aaromin2p2 = [//AAROMIN texto 2.5
 	{texto: "Pode liberar agora?", p: 0},
-	{texto: "Liberado, chefia ^w^", p: 1, t: 4}	
+	{texto: "Liberado, chefia ^w^", p: 1},
+	{texto: "Mas ó, queria dizer que você dança muito, viu <3", p: 1},
+	{texto: "Uh... valeu?", p: 0, t: 4}
+]
+
+global.diag_aaromin3 = [//AAROMIN texto 3
+	{texto: "Esses caranguejinhos são uns fofos, não são?", p: 1},
+	{texto: "E esse amuleto é uma graçaaaa :3", p: 1},
+	{texto: "Esse é o amuleto da minha mãe...", p: 0},
+	{texto: "Jura?? Sua mãe tem um ótimo gosto ('u')", p: 1},
+	{texto: "Eu... eu odiava esse amuleto, ele fedia e minha rinite atacava", p: 0},
+	{texto: "Bom, se quiser, dá pra mim, eu não sinto cheiro mesmo, hihihi ^3^", p: 1},
+	{texto: "NÃO!!", p: 0},
+	{texto: "eu... gosto dele agora", p: 0},
+	{texto: "Se você diz ~o~", p: 1, t: 4},
+]
+
+global.diag_aaromin4 = [//AAROMIN texto 3
+	{texto: "Ugh, não gosto desse cara", p: 1},
+	{texto: "Você... pode não gostar de pessoas?", p: 0},
+	{texto: "Claro, por que não poderia?", p: 1},
+	{texto: "Sla... você é um robô de serviço", p: 0},
+	{texto: "Posso fazer muitas coisas que um humano pode fazer, muito obrigada U_U", p: 1},
+	{texto: "Agora passa, não dá nada que ele pedir, tá bom?", p: 1, t: 4}
+]
+
+global.diag_aaromin_place = [//AAROMIN texto 3
+	{texto: "placeholder", p: 1},
+]
+
+global.diag_aaromin_final = [//AAROMIN texto 3
+	{texto: "infelizmente, acabamos nos enrolando e não conseguimos finalizar o jogo", p: 1},
+	{texto: "mas espero que tenham curtido <3", p: 1},
 ]
 
 global.diag_cerimonia = [
@@ -123,4 +155,41 @@ global.diag_cerimonia = [
 	{texto: "EI, NÃO É ELA ALI???", n: "CarangueJUNIOR", c: sFaceCardCaranguejo},
 	{texto: "É ELA MESMA", n: "CarangueJOHN", c: sFaceCardCaranguejo},
 	{texto: "PEGA ELA!!", n: "CarangueJUH", c: sFaceCardCaranguejo, t: 5},
+]
+
+global.diag_comemoracao = [
+	{texto: "óia a mina aeeee", p: 4},
+	{texto: "galera, essa é a mina que eu tava falando procês", p: 4},
+	{texto: "iraaaado, cara!! Vamo dar o presente pra ela!", n: "CarangueJIN", c: sFaceCardCaranguejo},
+	{texto: "gente, não precisa...", p: 0, t: 5}
+]
+
+global.diag_comemoracao2 = [
+	{texto: "ó, isso é pelo mérito de ser tão quadril solto", p: 4},
+	{texto: "é o amuleto dos carangueijos", p: 4},
+	{texto: "ele vai te dar sorte e espantar as coisas ruins!", n: "CarangueJIN", c: sFaceCardCaranguejo},
+	{texto: "ou talvez seja só pelo cheiro de carniça mesmo", p: 4},
+	{texto: "todo caranguejo tem um desses", n: "CarangueJIN", c: sFaceCardCaranguejo},
+	{texto: "Esse amuleto... Me parece familiar", p: 0},
+	{texto: "é que somos família agora, né", p: 4},
+	{texto: "somos todos requebreixon", p: 4, t: 6},
+]
+
+global.diag_cara1 = [
+	{texto: "ei, pivete, te pago vintão pra me trazer um 'cheirinho ruim', falou?", n: "Cara(eca)", c: sCareca},
+	{texto: "...q?", v: 10, p: 0, pa: true},
+	{texto: "15?", n: "Cara(eca)", c: sCareca},
+	{texto: "não...", p: 0, pa: true},
+	{texto: "10?", n: "Cara(eca)", c: sCareca, pa: true},
+	{texto: "Não", p: 0, pa: true},
+	{texto: "5!", n: "Cara(eca)", c: sCareca, pa: true},
+	{texto: "NÃO!!", p: 0, pa: true},
+	{texto: "Fechado então! te dou 1 centavo pra cê me trazer um cheirinho dos ruim", n: "Cara(eca)", c: sCareca},
+	{texto: "eu mereço...", p: 0},
+]
+
+global.diag_cara2 = [
+	{texto: "ummm, esse cheiro é dos terríveis", n: "Cara(eca)", c: sCareca},
+	{texto: "toma, a moeda é sua", n: "Cara(eca)", c: sCareca},
+	{texto: "valeu... eu acho", p: 0, pa: true, t: 7},
 ]

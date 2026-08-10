@@ -3,6 +3,8 @@ down = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
 up = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
 right = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"));
 
+audio_stop_sound(musOST0);
+
 if (global.comecou)
 {
 	if (!audio_is_playing(musSLA))

@@ -115,6 +115,19 @@ dialogo = function()
 							oCaranguejos.hspeed = -5
 							instance_destroy();
 						break
+						case 6:
+							oPlayer.pd_mover = 1;
+							oPlayer.cheiro = "ruim";
+							oPlayer.cuts = 0;
+							oCaranguejos.pd_vazar = 1;
+							oCaranguejos.hspeed = -5
+							instance_destroy();
+						break
+						case 7://dialogo normal
+							oPlayer.pd_mover = 1;
+							oPlayer.moeda = 1;
+							instance_destroy();
+						break;
 						default:
 							oPlayer.pd_mover = 1;
 							instance_destroy();

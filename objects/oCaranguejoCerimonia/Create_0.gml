@@ -1,0 +1,1 @@
+vagao = (x div oPlayer.cam_dist);

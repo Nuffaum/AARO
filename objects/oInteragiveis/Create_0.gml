@@ -45,6 +45,16 @@ interacao = function()
 					int_manual = !int_manual; //ativa a interação com o manuel
 					global.sabe_dancar = true;
 				break;
+				case oAspirador:
+				if (pd_int)
+				{
+					if (oPlayer.moeda == 1)
+					{
+						oAspirador.pd_andar = 1;
+						pd_int = false;
+					}
+				}
+				break;
 			}
 		}
 	}

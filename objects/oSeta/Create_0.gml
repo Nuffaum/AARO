@@ -115,7 +115,7 @@ func_notas = function()
 			}
 		}
 	}
-	else
+	else if (global.turno == 1)
 	{
 		var tecla = -1;
 
@@ -151,7 +151,7 @@ func_notas = function()
 					conta ++;
 					n_setas = n_setas_inicio + conta;
 					
-					if (conta == 2)
+					if (conta == 7)
 					{
 						var transic = instance_create_layer(0, 0, "Batalha", oTransicao);
 						transic.rm_goto = "pós-dança";
