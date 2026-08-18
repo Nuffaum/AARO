@@ -6,6 +6,7 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
+    {"name":"inst_12C55408","path":"rooms/rmVagoes/rmVagoes.yy",},
     {"name":"inst_5DD2AAB","path":"rooms/rmVagoes/rmVagoes.yy",},
     {"name":"inst_696359FA","path":"rooms/rmVagoes/rmVagoes.yy",},
     {"name":"inst_75473B15","path":"rooms/rmVagoes/rmVagoes.yy",},
@@ -62,7 +63,6 @@
     {"name":"inst_7C046F05","path":"rooms/rmVagoes/rmVagoes.yy",},
     {"name":"inst_349A7782","path":"rooms/rmVagoes/rmVagoes.yy",},
     {"name":"inst_48BED94E","path":"rooms/rmVagoes/rmVagoes.yy",},
-    {"name":"inst_12C55408","path":"rooms/rmVagoes/rmVagoes.yy",},
   ],
   "isDnd":false,
   "layers":[
