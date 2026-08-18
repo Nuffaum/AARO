@@ -46,9 +46,9 @@ if (abrindo_boca)
         image_index = sprite_get_number(sCoelhoBoca) - 1;
         image_speed = 0;
 		
-		oPlayer.image_angle += 5;
-        oPlayer.x = lerp(oPlayer.x, x + 50, 0.07);
-        oPlayer.y = lerp(oPlayer.y, y - sprite_height/2 - 50, 0.07);
+		oPlayer.image_angle += 8;
+        oPlayer.x = lerp(oPlayer.x, x + 50, 0.05);
+        oPlayer.y = lerp(oPlayer.y, y - sprite_height/2 - 50, 0.05);
     }
 	
     if (place_meeting(x + 20, y, oPlayer))

@@ -129,7 +129,14 @@ global.diag_aaromin3 = [//AAROMIN texto 3
 	{texto: "Se você diz ~o~", p: 1, t: 4},
 ]
 
-global.diag_aaromin4 = [//AAROMIN texto 3
+global.diag_aaromin3p2 = [
+	{texto: "Inlcusive, onde estava indo mesmo?", p: 1},
+	{texto: "Tava indo ver meu pai...", p: 0},
+	{texto: "Uii, reunião de família ~^v^~", p: 1},
+	{texto: "é... mais ou menos...", p: 0},
+]
+
+global.diag_aaromin4 = [//AAROMIN texto 4
 	{texto: "Ugh, não gosto desse cara", p: 1},
 	{texto: "Você... pode não gostar de pessoas?", p: 0},
 	{texto: "Claro, por que não poderia?", p: 1},
@@ -138,13 +145,80 @@ global.diag_aaromin4 = [//AAROMIN texto 3
 	{texto: "Agora passa, não dá nada que ele pedir, tá bom?", p: 1, t: 4}
 ]
 
+global.diag_aaromin5 = [//AAROMIN texto 5
+	{texto: "Que troço é esse no chão...?", p: 0},
+	{texto: "Doce de cenoura! :)p", p: 1},
+	{texto: "Uh... E por que tá no chão?", p: 0},
+	{texto: "Acho que você nunca foi uma boa cozinheira, kkkkk ^o^", p: 1},
+	{texto: "Mas não fui eu que fiz isso!", p: 0},
+	{texto: "Quero dizer... ESSE não fui eu", p: 0},
+	{texto: "Hehehe, tá bom, sei... ;)", p: 1},
+	{texto: "Como que eu passo agora?", p: 0},
+	{texto: "Acho que não tem problema você passar por cima", p: 1},
+	{texto: "Mas eu vou ficar fedendo a cenoura...", p: 0},
+	{texto: "Você também pode subir naquele robô aspirador, mas precisa de uma moeda pra liberar ele", p: 1},
+	{texto: "E desde quando você se importa em se sujar? Você sempre foi bagunceira ^o^", p: 1},
+	{texto: "Como você sabe?", p: 0},
+	{texto: "Eu sei de muitas coisas, querida ;)", p: 1},
+	{texto: "...", p: 0, t: 4}
+]
+
+global.diag_aaromin5p2 = [//AAROMIN texto 5p2
+	{texto: "O que você quis dizer com \"ESSE não fui eu\"?", p: 1},
+	{texto: "É que, uns meses atrás, eu e minha mãe pegamos pra cozinhar um doce de cenoura", p: 0},
+	{texto: "Mas eu acabei derrubando tudo no chão sem querer", p: 0},
+	{texto: "Kkkkkk, deve ter sido muito engraçado XD", p: 1},
+	{texto: "E foi, hehe...", p: 0},
+	{texto: "Na próxima, traz um pouco pra mim :p", p: 1},
+	{texto: "é... na próxima...", p: 0},
+]
+
+global.diag_aaromin5p3 = [//AAROMIN texto 5p3
+	{texto: "Hmmm, você tá cheirando bem ~^u^~", p: 1},
+	{texto: "Você sente cheiro?", p: 0},
+	{texto: "Não, mas quem não gosta de cheirinho de doce de cenoura? :D", p: 1},
+]
+
+global.diag_aaromin6 = [//AAROMIN texto 6
+	{texto: "Ah não... O que ELE tá fazendo aqui?? E por que ele tá tão grande??", p: 0},
+	{texto: "Hm? Ah, não se preocupa, é só o dorminhoco, ele tá dormindo desde que entrou aqui", p: 1},
+	{texto: "ELE TÁ VIVO??", p: 0},
+	{texto: "Claro que está! :D", p: 1},
+	{texto: "Vocês se conhecem? :o", p: 1},
+	{texto: "Ele era meu bichinho de pelúcia da infância... o Cheirinho", p: 0},
+	{texto: "Ele era assustador...", p: 0},
+	{texto: "Mas ele é tão fofo! *o*", p: 1},
+	{texto: "Minha mãe achava a mesma coisa... Pena que minha eu de 7 anos não achava o mesmo...", p: 0},
+	{texto: "Ela ficava fazendo ele me cheirar e eu odiava", p: 0},
+	{texto: "Ela só parou quando eu comecei a chorar e falar que eu não gostava dele", p: 0},
+	{texto: "Crianças são estranhas :/", p: 1},
+	{texto: "Ela dizia a mesma coisa...", p: 0, t: 4},
+]
+
+global.diag_aaromin6p2 = [//AAROMIN texto 6p2
+	{texto: "Não precisa ter medo, ele é inofensivo", p: 1},
+	{texto: "Além de que ele tá dormindo", p: 1},
+	{texto: "Só deve acordar se você estiver com um cheiro muito forte", p: 1}
+]
+
+global.diag_aaromin6p3 = [//AAROMIN texto 6p3
+	{texto: "...", p: 0},
+	{texto: ":o...", p: 1},
+	{texto: "então...", p: 0},
+	{texto: "Acho que não precisa da minha permissão agora XD", p: 1},
+	{texto: "Ele me cheirou e fugiu...", p: 0},
+	{texto: "Acho que foi seu amuleto", p: 1},
+	{texto: "Você não disse que ele fedia?", p: 1},
+	{texto: "Faz sentido...", p: 0},
+]
+
 global.diag_aaromin_place = [//AAROMIN texto 3
 	{texto: "placeholder", p: 1, t: 4},
 ]
 
 global.diag_aaromin_final = [//AAROMIN texto 3
 	{texto: "infelizmente, acabamos nos enrolando e não conseguimos finalizar o jogo", p: 1},
-	{texto: "mas espero que tenham curtido <3", p: 1},
+	{texto: "mas espero que tenham curtido <3", p: 1, t: 4},
 ]
 
 global.diag_cerimonia = [

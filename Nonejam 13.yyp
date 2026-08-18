@@ -106,6 +106,7 @@
     {"id":{"name":"sndLeftN","path":"sounds/sndLeftN/sndLeftN.yy",},},
     {"id":{"name":"sndRightC","path":"sounds/sndRightC/sndRightC.yy",},},
     {"id":{"name":"sndRightN","path":"sounds/sndRightN/sndRightN.yy",},},
+    {"id":{"name":"sndSplat","path":"sounds/sndSplat/sndSplat.yy",},},
     {"id":{"name":"sndSugando","path":"sounds/sndSugando/sndSugando.yy",},},
     {"id":{"name":"sndUpC","path":"sounds/sndUpC/sndUpC.yy",},},
     {"id":{"name":"sndUpN","path":"sounds/sndUpN/sndUpN.yy",},},

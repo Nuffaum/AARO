@@ -21,5 +21,15 @@ if (!pd_abrir)
 }
 else
 {
+	if (vagao == 5 && oPlayer.cheiro == "cenoura")
+	{
+		dialog2 = global.diag_aaromin5p3;
+	}
+	
+	if (vagao == 6 && !instance_exists(oCoelho))
+	{
+		dialog2 = global.diag_aaromin6p3;
+	}
+	
 	dialogos = dialog2;
 }

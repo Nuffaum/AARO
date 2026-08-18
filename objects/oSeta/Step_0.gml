@@ -41,7 +41,26 @@ if (global.comecou)
 	}
 	else
 	{
-		
+		if (seta == 0 && up)
+		{
+			sprite_index = sSetaDirApertando;
+		}
+		else if (seta == 1 && right)
+		{
+			sprite_index = sSetaDirApertando;
+		}
+		else if (seta == 2 && down)
+		{
+			sprite_index = sSetaDirApertando;
+		}
+		else if (seta == 3 && left)
+		{
+			sprite_index = sSetaDirApertando;
+		}
+		else
+		{
+			sprite_index = sSetaDir;
+		}
 	}
 }
 else
